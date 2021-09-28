@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="btnToonEnumWaarde" Content="Toon Enum waarde" HorizontalAlignment="Left" Height="45" Margin="30,23,0,0" VerticalAlignment="Top" Width="164" Click="btnToonEnumWaarde_Click"/>
-        <Button x:Name="btnToonVoorspelling" Content="Toon voorspelling" HorizontalAlignment="Left" Margin="231,23,0,0" VerticalAlignment="Top" Height="45" Width="169" Click="btnToonVoorspelling_Click"/>
-        <Label x:Name="lblVoorspelling" Content="Voorspelling windrichting" HorizontalAlignment="Left" Margin="231,94,0,0" VerticalAlignment="Top" Width="240"/>
+        <Button x:Name="btnShowEnumValue" Content="Toon Enum waarde" HorizontalAlignment="Left" Height="45" Margin="30,23,0,0" VerticalAlignment="Top" Width="164" Click="BtnShowEnumValue_Click"/>
+        <Button x:Name="btnShowPrediction" Content="Toon voorspelling" HorizontalAlignment="Left" Margin="231,23,0,0" VerticalAlignment="Top" Height="45" Width="169" Click="BtnShowPrediction_Click"/>
+        <Label x:Name="lblPrediction" Content="Voorspelling windrichting" HorizontalAlignment="Left" Margin="231,94,0,0" VerticalAlignment="Top" Width="240"/>
 
     </Grid>
 </Window>

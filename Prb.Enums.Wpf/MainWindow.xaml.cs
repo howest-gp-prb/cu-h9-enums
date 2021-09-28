@@ -25,26 +25,26 @@ namespace Hfdstk6.Enumeraties01.WPF
             InitializeComponent();
         }
 
-        enum Seizoen { Herfst, Winter, Lente, Zomer }
-        enum WindRichting { Oost, Zuid, Noord, West };
+        enum Season { Autumn, Winter, Spring, Summer }
+        enum WindDirection { East, South, North, West };
 
-        private void btnToonEnumWaarde_Click(object sender, RoutedEventArgs e)
+        private void BtnShowEnumValue_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Seizoen.Herfst.ToString());
+            MessageBox.Show(Season.Autumn.ToString());
         }
 
-        private void btnToonVoorspelling_Click(object sender, RoutedEventArgs e)
+        private void BtnShowPrediction_Click(object sender, RoutedEventArgs e)
         {
-            int huidigeWindNr = (int)WindRichting.Oost;
-            string huidigeWind = WindRichting.Oost.ToString();
-            lblVoorspelling.Content = "Huidige wind = " + huidigeWind + " (nr. " + huidigeWindNr + ")\n";
+            int currentWindIndex = (int)WindDirection.East;
+            string currentWind = WindDirection.East.ToString();
+            lblPrediction.Content = "Huidige wind = " + currentWind + " (nr. " + currentWindIndex + ")\n";
 
-            int windVoorMorgenNr = (int)WindRichting.West;
-            string windVoorMorgen = WindRichting.West.ToString();
-            lblVoorspelling.Content += "Wind voor morgen = " + windVoorMorgen + " (nr. " + windVoorMorgenNr + ")\n";
+            int tomorrowWindIndex = (int)WindDirection.West;
+            string tomorrowWind = WindDirection.West.ToString();
+            lblPrediction.Content += "Wind voor morgen = " + tomorrowWind + " (nr. " + tomorrowWindIndex + ")\n";
 
-            WindRichting richtingNul = (WindRichting)2;
-            lblVoorspelling.Content += "Wind met index 2 = " + richtingNul.ToString();
+            WindDirection richtingNul = (WindDirection)2;
+            lblPrediction.Content += "Wind met index 2 = " + richtingNul.ToString();
         }
     }
 }
