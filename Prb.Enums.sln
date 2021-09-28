@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hfdstk6.Enumeraties01.WPF", "Hfdstk6.Enumeraties01.WPF\Hfdstk6.Enumeraties01.WPF.csproj", "{D2C9C375-A549-4062-8278-3C4E09A0CC95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prb.Enums.Wpf", "Prb.Enums.Wpf\Prb.Enums.Wpf.csproj", "{B2452ADB-E3AE-4304-9A36-FF7B24EADC72}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D2C9C375-A549-4062-8278-3C4E09A0CC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D2C9C375-A549-4062-8278-3C4E09A0CC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D2C9C375-A549-4062-8278-3C4E09A0CC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D2C9C375-A549-4062-8278-3C4E09A0CC95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2452ADB-E3AE-4304-9A36-FF7B24EADC72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2452ADB-E3AE-4304-9A36-FF7B24EADC72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2452ADB-E3AE-4304-9A36-FF7B24EADC72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2452ADB-E3AE-4304-9A36-FF7B24EADC72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
