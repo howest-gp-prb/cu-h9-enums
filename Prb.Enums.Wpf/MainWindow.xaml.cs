@@ -25,9 +25,6 @@ namespace Hfdstk6.Enumeraties01.WPF
             InitializeComponent();
         }
 
-        enum Season { Autumn, Winter, Spring, Summer }
-        enum WindDirection { East, South, North, West };
-
         private void BtnShowEnumValue_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show(Season.Autumn.ToString());
@@ -47,4 +44,7 @@ namespace Hfdstk6.Enumeraties01.WPF
             lblPrediction.Content += "Wind met index 2 = " + richtingNul.ToString();
         }
     }
+
+    enum Season { Autumn, Winter, Spring, Summer }
+    enum WindDirection { East, South, North, West };
 }
