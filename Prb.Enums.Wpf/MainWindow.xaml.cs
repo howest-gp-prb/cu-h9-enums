@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Hfdstk6.Enumeraties01.WPF
+namespace Prb.Enums.Wpf
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -32,19 +32,18 @@ namespace Hfdstk6.Enumeraties01.WPF
 
         private void BtnShowPrediction_Click(object sender, RoutedEventArgs e)
         {
-            int currentWindIndex = (int)WindDirection.East;
-            string currentWind = WindDirection.East.ToString();
-            lblPrediction.Content = "Huidige wind = " + currentWind + " (nr. " + currentWindIndex + ")\n";
+            WindDirection currentWind = WindDirection.East;
+            int currentWindIndex = (int)currentWind;
+            string currentWindName = currentWind.ToString();
+            lblPrediction.Content = "Huidige wind = " + currentWindName + " (nr. " + currentWindIndex + ")\n";
 
-            int tomorrowWindIndex = (int)WindDirection.West;
-            string tomorrowWind = WindDirection.West.ToString();
-            lblPrediction.Content += "Wind voor morgen = " + tomorrowWind + " (nr. " + tomorrowWindIndex + ")\n";
+            WindDirection tomorrowWind = WindDirection.West;
+            int tomorrowWindIndex = (int)tomorrowWind;
+            string tomorrowWindName = tomorrowWind.ToString();
+            lblPrediction.Content += "Wind voor morgen = " + tomorrowWindName + " (nr. " + tomorrowWindIndex + ")\n";
 
-            WindDirection richtingNul = (WindDirection)2;
-            lblPrediction.Content += "Wind met index 2 = " + richtingNul.ToString();
+            WindDirection directionTwo = (WindDirection)2;
+            lblPrediction.Content += "Wind met index 2 = " + directionTwo.ToString();
         }
     }
-
-    enum Season { Autumn, Winter, Spring, Summer }
-    enum WindDirection { East, South, North, West };
 }
